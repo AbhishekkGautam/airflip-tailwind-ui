@@ -16,7 +16,7 @@ export default function Home() {
         <div className="w-1/2">
           <ImageContainer />
         </div>
-        <div className="">
+        <div className="w-1/2">
           <span className="text-sm font-medium text-gray-500">Starting at</span>
           <h1 className="text-5xl font-extrabold text-gray-900">$1,799</h1>
           <div className="mt-6">
