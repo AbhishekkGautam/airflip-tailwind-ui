@@ -2,8 +2,8 @@ import ImageContainer from '@/components/image-container';
 
 export default function Home() {
   return (
-    <main className="container mx-auto m-12">
-      <div className="mb-8">
+    <main className="container mx-auto py-12 mb-24">
+      <div className="mb-6">
         <h1 className="text-3xl font-extrabold text-gray-900">
           Get your Kemper Profiling Amp
         </h1>
@@ -12,8 +12,8 @@ export default function Home() {
         </p>
       </div>
       <hr />
-      <div className="w-full mt-8 flex space-x-8">
-        <div className="w-1/2">
+      <div className="w-full mt-12 flex space-x-8">
+        <div className="w-1/2 sticky left-0 top-8 h-full overflow-y-auto">
           <ImageContainer />
         </div>
         <div className="w-1/2">
@@ -39,7 +39,7 @@ export default function Home() {
           <div className="mt-10">
             <h1 className="text-lg font-medium">Form Factor</h1>
             <div className="flex space-x-4 mt-2">
-              <div className="border border-gray-700 rounded-md p-4 text-sm">
+              <div className="border border-gray-700 rounded-md p-4 text-sm cursor-pointer">
                 <h1 className="text-gray-900 font-medium pb-2">
                   Profiler Head
                 </h1>
@@ -47,7 +47,7 @@ export default function Home() {
                   Compact amplifier head, perfect for a speaker cabinet or desk.
                 </p>
               </div>
-              <div className="border border-gray-300 rounded-md p-4 text-sm">
+              <div className="border border-gray-300 rounded-md p-4 text-sm cursor-pointer">
                 <h1 className="text-gray-900 font-medium pb-2">
                   Profiler Rack
                 </h1>
@@ -60,14 +60,14 @@ export default function Home() {
           <div className="mt-10">
             <h1 className="text-lg font-medium">Power Amp</h1>
             <div className="flex flex-col w-full space-y-4 mt-2">
-              <div className="border border-gray-700 rounded-md p-4 text-sm">
+              <div className="border border-gray-700 rounded-md p-4 text-sm cursor-pointer">
                 <h1 className="text-gray-900 font-medium pb-2">None</h1>
                 <p className="text-gray-500">
                   Use in the studio or with your own power amp.
                 </p>
               </div>
               <div className=" flex justify-between items-center border border-gray-300 rounded-md p-4 text-sm">
-                <div className="">
+                <div className="cursor-pointer">
                   <h1 className="text-gray-900 font-medium pb-2">Powered</h1>
                   <p className="text-gray-500">
                     Built-in 600W solid state power amp.
@@ -80,11 +80,11 @@ export default function Home() {
           <div className="mt-10">
             <h1 className="text-lg font-medium">Foot Controller</h1>
             <div className="flex flex-col w-full space-y-4 mt-2">
-              <div className="border border-gray-700 rounded-md p-4 text-sm">
-                <h1 className="text-gray-900 font-medium pb-2">None</h1>
+              <div className="border border-gray-700 rounded-md p-4 text-sm cursor-pointer">
+                <h1 className="text-gray-900 font-medium">None</h1>
               </div>
-              <div className="flex justify-between items-center border border-gray-300 rounded-md p-4 text-sm">
-                <h1 className="text-gray-900 font-medium pb-2">
+              <div className="flex justify-between items-center border border-gray-300 rounded-md p-4 text-sm cursor-pointer">
+                <h1 className="text-gray-900 font-medium">
                   Profiler Remote Foot Controller
                 </h1>
                 <p className="text-sm text-gray-900">+ $449</p>

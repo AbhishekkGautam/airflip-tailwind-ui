@@ -3,7 +3,7 @@ import Image from 'next/image';
 const ImageContainer = () => {
   return (
     <>
-      <div className="border border-gray-200 rounded-md overflow-hidden">
+      <div className="border border-gray-200 rounded-md overflow-hidden flex justify-center">
         <Image
           src="/img/kemper-front.jpg"
           width={500}
