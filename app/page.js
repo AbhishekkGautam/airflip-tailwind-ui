@@ -1,4 +1,5 @@
 import ImageContainer from '@/components/image-container';
+import OptionsSelector from '@/components/options-selector';
 
 export default function Home() {
   return (
@@ -57,40 +58,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="mt-10">
-            <h1 className="text-lg font-medium">Power Amp</h1>
-            <div className="flex flex-col w-full space-y-4 mt-2">
-              <div className="border border-gray-700 rounded-md p-4 text-sm cursor-pointer">
-                <h1 className="text-gray-900 font-medium pb-2">None</h1>
-                <p className="text-gray-500">
-                  Use in the studio or with your own power amp.
-                </p>
-              </div>
-              <div className=" flex justify-between items-center border border-gray-300 rounded-md p-4 text-sm">
-                <div className="cursor-pointer">
-                  <h1 className="text-gray-900 font-medium pb-2">Powered</h1>
-                  <p className="text-gray-500">
-                    Built-in 600W solid state power amp.
-                  </p>
-                </div>
-                <div className="text-sm text-gray-900">+ $449</div>
-              </div>
-            </div>
-          </div>
-          <div className="mt-10">
-            <h1 className="text-lg font-medium">Foot Controller</h1>
-            <div className="flex flex-col w-full space-y-4 mt-2">
-              <div className="border border-gray-700 rounded-md p-4 text-sm cursor-pointer">
-                <h1 className="text-gray-900 font-medium">None</h1>
-              </div>
-              <div className="flex justify-between items-center border border-gray-300 rounded-md p-4 text-sm cursor-pointer">
-                <h1 className="text-gray-900 font-medium">
-                  Profiler Remote Foot Controller
-                </h1>
-                <p className="text-sm text-gray-900">+ $449</p>
-              </div>
-            </div>
-          </div>
+          {<OptionsSelector />}
         </div>
       </div>
     </main>

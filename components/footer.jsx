@@ -1,4 +1,11 @@
+'use client';
+import { useAppContext } from '@/context/app-context';
+
 const Footer = () => {
+  const {
+    appState: { totalPrice },
+  } = useAppContext();
+
   return (
     <section className="bg-gray-50 fixed bottom-0 w-full">
       <div className="container mx-auto py-8 flex justify-between items-center">
@@ -18,7 +25,7 @@ const Footer = () => {
         </div>
         <div className="flex space-x-6 items-center">
           <div className="text-right">
-            <h1 className="font-bold text-3xl text-gray-900">$2,717</h1>
+            <h1 className="font-bold text-3xl text-gray-900">${totalPrice}</h1>
             <p className="text-sm text-gray-500 pt-1">
               Need financing? <span className="underline">Learn more</span>{' '}
             </p>
